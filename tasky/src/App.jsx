@@ -62,6 +62,7 @@ function App() {
   const formSubmitHandler = (event) => {
     event.preventDefault();
 
+    
     const tasks = [...taskState.tasks];
     const form = {...formState};
 
