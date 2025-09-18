@@ -103,3 +103,41 @@ form {
   width: 50%;
   margin: auto;
 }
+
+select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  background-color: white;
+  font-family: inherit;
+  font-size: 1em;
+  color: #333;
+  appearance: none; /* removes default browser arrow */
+}
+
+
+.priority {
+  font-weight: bold;
+  padding: 4px 50px;
+  border-radius: 6px;
+  display: inline-block;
+  margin-top: 8px;
+  font-size: 0.9em;
+  color: white;
+}
+
+.priority.low {
+  background-color: green;
+}
+
+.priority.medium {
+  background-color: orange;
+}
+
+.priority.high {
+  background-color: red;
+}

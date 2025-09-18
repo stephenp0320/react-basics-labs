@@ -24,8 +24,16 @@ const AddTaskForm = (props) => {
                 </label>
                 <label>
                     Priority:
-                    <input type="text" name="priority" onChange={(event) => props.change(event)}
-                    />
+                    <select
+                        name="priority"
+                        onChange={(event) => props.change(event)}
+                        defaultValue="Low"   
+                        required
+                    >
+                        <option value="Low">Low</option>
+                        <option value="Medium">Medium</option>
+                        <option value="High">High</option>
+                    </select>
                 </label>
                 <br />
                 <input type="submit" value="Submit" />
